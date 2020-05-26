@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-firestore.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sphinx Firebase</title>
+</head>
+<body>
+    <h1>Sphinx Cloudstore</h1>
+    <div class="content">
+        <form id="add-skybase-form">
+            <input type="text" name="name" placeholder="Sky Base">
+            <input type="text" name="location" placeholder="Sky Base Location">
+            <button>Add Skybase</button>
+        </form>
+        <ul id="cloud-list"></ul>
+    </div>
+    
+
+<script>
+  
+  var firebaseConfig = {
+    apiKey: "AIzaSyAOW3yVik2oNDL_jN5tD5E-AdFcBf99T1M",
+    authDomain: "sphinxcloud.firebaseapp.com",
+    databaseURL: "https://sphinxcloud.firebaseio.com",
+    projectId: "sphinxcloud",
+    storageBucket: "sphinxcloud.appspot.com",
+    messagingSenderId: "736047632606",
+    appId: "1:736047632606:web:18e373b20c180aaa94724f",
+    measurementId: "G-4H1YXLEVZ1"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore();
+  //db.settings({ timestampsInSnapshots: true });
+</script>
+    <script src="app.js"></script>
+</body>
+</html>
